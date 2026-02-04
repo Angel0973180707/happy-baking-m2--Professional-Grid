@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>幸福緣手作概念館 - 專業職人格狀</title>
+    <link rel="stylesheet" href="style-grid.css">
+    <style>
+        /* 內聯 CSS 為了方便您快速發布拍照，實際教學會拆分到 style-grid.css */
+        body { font-family: 'Noto Sans CJK TC', sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; color: #333; line-height: 1.6; }
+        header { background-color: #fff; padding: 20px 0; text-align: center; border-bottom: 1px solid #eee; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        header h1 { font-size: 2.5em; color: #d68a5a; margin-bottom: 5px; }
+        header p { font-size: 1.1em; color: #666; }
+        nav { background-color: #e0b090; padding: 10px 0; text-align: center; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+        nav ul li { margin: 0 15px; }
+        nav ul li a { color: white; text-decoration: none; font-weight: bold; font-size: 1em; padding: 8px 12px; transition: background-color 0.3s ease; border-radius: 4px; }
+        nav ul li a:hover { background-color: rgba(255,255,255,0.2); }
+        main { max-width: 1200px; margin: 40px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .content-card { background-color: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); overflow: hidden; text-align: center; transition: transform 0.3s ease; }
+        .content-card:hover { transform: translateY(-5px); }
+        .content-card img { width: 100%; height: 200px; object-fit: cover; }
+        .content-card h2 { color: #d68a5a; font-size: 1.8em; margin: 20px 0 10px; padding: 0 15px; }
+        .content-card .text-content { padding: 0 20px 25px; font-size: 0.95em; color: #555; }
+        #workshop .smart-mastermind { background-color: #fff9f0; border: 1px solid #f0d9c5; padding: 25px; border-radius: 8px; margin: 20px; }
+        #workshop .smart-mastermind h3 { color: #d68a5a; margin-top: 0; font-size: 1.5em; }
+        #workshop .smart-mastermind input[type="text"] { width: calc(100% - 22px); padding: 10px; margin-bottom: 10px; border: 1px solid #e0b090; border-radius: 4px; font-size: 0.95em; }
+        #workshop .smart-mastermind button { background-color: #d68a5a; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-size: 1em; transition: background-color 0.3s ease; }
+        #workshop .smart-mastermind button:hover { background-color: #bb7245; }
+        footer { background-color: #e0b090; color: white; text-align: center; padding: 25px 20px; margin-top: 50px; }
+        footer p { margin: 0; font-size: 0.85em; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>幸福緣手作概念館</h1>
+        <p>天使校長：您的烘焙專業與心靈導師</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#inspiration">幸福感悟</a></li>
+            <li><a href="#moments">幸福剪影</a></li>
+            <li><a href="#science">烘焙科學</a></li>
+            <li><a href="#workshop">實踐工房</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="inspiration" class="content-card">
+            <img src="https://via.placeholder.com/600x400/f0d9c5/4a4a4a?text=心靈滋養與靜心烘焙" alt="心靈滋養與靜心烘焙">
+            <h2>幸福感悟</h2>
+            <div class="text-content">
+                <p>揉麵團，亦是揉捏心緒。在這裡，您會找到讓心靈平靜的烘焙哲學與感悟，讓每個烘焙時刻都充滿正能量。</p>
+            </div>
+        </div>
+
+        <div id="moments" class="content-card">
+            <img src="https://via.placeholder.com/600x400/ffe0c7/333333?text=親子烘焙歡樂時光" alt="親子烘焙歡樂時光">
+            <h2>幸福剪影</h2>
+            <div class="text-content">
+                <p>記錄下與孩子一同烘焙的溫馨瞬間，分享親子早餐的樂趣與食譜。這些珍貴的畫面，都是幸福的見證。</p>
+            </div>
+        </div>
+
+        <div id="science" class="content-card">
+            <img src="https://via.placeholder.com/600x400/c09f80/ffffff?text=破解烘焙的科學奧秘" alt="破解烘焙的科學奧秘">
+            <h2>烘焙科學</h2>
+            <div class="text-content">
+                <p>從食材特性到烘烤原理，深入淺出地解讀烘焙科學，幫助您掌握核心技術，告別失敗，烤出完美作品。</p>
+            </div>
+        </div>
+
+        <div id="workshop" class="content-card">
+            <img src="https://via.placeholder.com/600x400/ececec/666666?text=智多星與實用配方" alt="智多星與實用配方">
+            <h2>實踐工房</h2>
+            <div class="text-content">
+                <p>提供實用工具、精選配方，更有「幸福智多星」為您解答烘焙疑難，讓您的手作之路更加順遂。</p>
+                <div class="smart-mastermind">
+                    <h3>幸福智多星</h3>
+                    <input type="text" placeholder="請輸入您的烘焙困擾（例如：甜點太甜）">
+                    <button>尋找幸福對策</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>幸福緣手作概念館 &copy; 2026. 讓每一個手作，都充滿愛。</p>
+    </footer>
+</body>
+</html>
